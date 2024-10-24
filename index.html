@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.jpeg" type="image/jpg">
+    <title>Amazon</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .heading {
+            margin-left: 25px;
+            margin-top: 20px;
+            font-family: cursive;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            margin-left: 400px;
+            width: 30%;
+            border: none;
+            border-bottom: 2px solid black;
+            text-align: center;
+
+        }
+        .search-bar:hover{
+            
+            transform: scale(1.1);
+            transition: 0.5s;
+
+        }
+
+        .header {
+            margin: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .small-img {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+
+        .img-1 {
+            margin: 15px;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .img-1:hover{
+            
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+
+        .middle-img {
+            border: 2px solid black;
+            border: 10px;
+            cursor: pointer;
+        }
+
+        .last-img {
+            width: 550px;
+            height: 550px;
+            border: none;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .offer {
+            display: flex;
+            align-items: center;
+        }
+
+        .bankoffer1 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .bankoffer2 {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <span class="heading"><img src="./logo.jpeg" height="50px"> &nbsp;Amazon</span>
+        <input type="text" class="search-bar" placeholder="Search here">
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="small-img">
+            <img src="./img-1.jpg" class="img-1" height="60px" onclick="changenumber(1)">
+            <img src="./img-2.jpg" class="img-1" height="60px" onclick="changenumber(2)">
+            <img src="./img-3.jpg" class="img-1" height="60px" onclick="changenumber(3)">
+            <img src="./img-4.jpg" class="img-1" height="60px" onclick="changenumber(4)">
+            <img src="./img-5.jpg" class="img-1" height="60px" onclick="changenumber(5)">
+            <img src="./img-6.jpg" class="img-1" height="60px" onclick="changenumber(6)">
+
+        </div>
+
+        <div class="middle-img">
+            <img src="./img-1.jpg" height="500px" id="change">
+
+        </div>
+
+        <div class="last-img">
+            <h1>Apple iPhone 16 (128 GB) - Ultramarine</h1>
+
+
+            <p class="para">
+                300+ bought in past month</p>
+
+            <hr>
+
+            <p>
+                Inclusive of all taxes<br><br>
+                EMI starts at ₹3,874. No Cost EMI available
+            </p>
+            <hr>
+            <h3 class="offer"><img src="./offer.png" height="30px"> &nbsp; &nbsp;Offers</h3>
+
+            <b>Size</b> : 128 GB &nbsp; 256 GB &nbsp; 512 GB<br> <br>
+            <b> Brand</b> : Apple <br> <br>
+            <b> Operating System</b>: iOS 17 <br> <br>
+            <b>RAM Memory Installed Size</b> :128 GB <br><br>
+            <b>CPU Model</b> :A Series A10 <br> <br>
+            <b>Memory Storage Capacity</b> : 128 GB <br> <br>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function changenumber(num)
+        {
+            const changeElement = document.getElementById('change');
+            if (num==1){
+                change.src='./img-1.jpg'
+            }
+            else if(num==2)
+            {
+                 change.src='./img-2.jpg'
+            }
+            else if(num==3)
+            {
+                 change.src='./img-3.jpg'
+            }
+            else if(num==4)
+            {
+                 change.src='./img-4.jpg'
+            }
+            else if(num==5)
+            {
+                 change.src='./img-5.jpg'
+            }
+            else if(num==6)
+            {
+                change.src='./img-6.jpg'
+            }
+          
+           
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
